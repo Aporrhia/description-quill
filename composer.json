@@ -1,0 +1,32 @@
+{
+    "name": "aporrhia/description-quill",
+    "description": "Quill for description field in MoonShine.",
+    "authors": [
+        {
+            "name": "Aporrhia"
+        }
+    ],
+    "license": "MIT",
+    "keywords": [
+        "laravel",
+        "description",
+        "moonshine",
+        "quill"
+    ],
+    "autoload": {
+        "psr-4": {
+            "Aporrhia\\DescriptionQuill\\": "src"
+        }
+    },
+    "require": {
+        "php": "^8.1",
+        "moonshine/moonshine": "^3.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Aporrhia\\DescriptionQuill\\Providers\\DescriptionQuillServiceProvider"
+            ]
+        }
+    }
+}
