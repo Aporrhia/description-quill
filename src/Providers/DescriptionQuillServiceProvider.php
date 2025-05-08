@@ -15,12 +15,11 @@ class DescriptionQuillServiceProvider extends ServiceProvider
 
     public function boot(): void
     {
-//        $this->loadViewsFrom(resource_path('views'), 'description-quill');
-        $this->loadViewsFrom(__DIR__ . '/../../resources/views', 'description-quill');
-//
-//        $this->publishes([
-//            __DIR__.'/../resources/views' => resource_path('views/vendor/description-quill'),
-//        ]);
+        $this->loadViewsFrom(__DIR__ . '/../../resources/views/fields', 'description-quill');
 
+
+        $this->publishes([
+            __DIR__ . '/../../public' => public_path('vendor/description-quill'),
+        ], ['description-quill-assets', 'laravel-assets']);
     }
 }

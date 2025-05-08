@@ -14,6 +14,7 @@ final class DescriptionQuill extends Textarea
 {
     use WithUnit;
 
+
 //    protected string $view = 'moonshine.fields.description';
     protected string $view = 'description-quill::fields.description-quill';
     protected ?string $locale = null;
@@ -23,9 +24,12 @@ final class DescriptionQuill extends Textarea
     protected function assets(): array
     {
         return [
-            Css::make(Vite::asset('resources/css/quill.snow.css')),
-            Js::make(Vite::asset('resources/js/quill.js')),
-            Js::make(Vite::asset('resources/js/quill-init.js')),
+            Css::make('vendor/description-quill/css/quill.snow.css'),
+            Js::make('vendor/description-quill/js/quill.js'),
+            Js::make('vendor/description-quill/js/quill-init.js'),
+//            Css::make(Vite::asset('resources/css/quill.snow.css')),
+//            Js::make(Vite::asset('resources/js/quill.js')),
+//            Js::make(Vite::asset('resources/js/quill-init.js')),
         ];
     }
 }
