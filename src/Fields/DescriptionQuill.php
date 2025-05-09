@@ -16,7 +16,7 @@ final class DescriptionQuill extends Textarea
 
 
 //    protected string $view = 'moonshine.fields.description';
-    protected string $view = 'description-quill::fields.description-quill';
+    protected string $view = 'descriptionquill::fields.description-quill';
     protected ?string $locale = null;
 
 //    protected string $view = 'moonshine-quill::fields.quill';
@@ -24,9 +24,9 @@ final class DescriptionQuill extends Textarea
     protected function assets(): array
     {
         return [
-            Css::make('vendor/description-quill/css/quill.snow.css'),
-            Js::make('vendor/description-quill/js/quill.js'),
-            Js::make('vendor/description-quill/js/quill-init.js'),
+            Css::make('vendor/descriptionquill/css/quill.snow.css'),
+            Js::make('vendor/descriptionquill/js/quill.js'),
+            Js::make('vendor/descriptionquill/js/quill-init.js'),
 //            Css::make(Vite::asset('resources/css/quill.snow.css')),
 //            Js::make(Vite::asset('resources/js/quill.js')),
 //            Js::make(Vite::asset('resources/js/quill-init.js')),
